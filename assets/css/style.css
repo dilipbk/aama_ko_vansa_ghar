@@ -1,0 +1,568 @@
+:root {
+  --primary-color: #0b1517;
+  --color-red: #c8021a;
+  --color-orange: #dc9457;
+  --color-pink: #ef3d5b;
+  --color-green: #57b957;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b1517;
+  color: #fff;
+}
+
+/* @import "./normalize.css";
+@import "./utilities.css";
+@import "./responsive.css"; */
+
+/* ______________ header section start _________________ */
+
+.header {
+  background: var(--color-red) url("../images/header-bg.png") no-repeat top;
+  background-size: cover;
+  min-height: 625px;
+  position: relative;
+}
+
+.secondary-header {
+  background: url("../images/breadcrumbbg.jpg") no-repeat top;
+  background-size: cover;
+  min-height: 40px;
+  position: relative;
+}
+
+.header .header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 625px;
+}
+
+.secondary-header .header-container {
+  min-height: 40px;
+  display: block;
+}
+
+.secondary-header .breadcrumb {
+  padding: 5rem 0;
+}
+
+.header .background-overlay {
+  background-image: linear-gradient(180deg, #000000 -80%, var(--color-red) 85%);
+  opacity: 0.87;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.secondary-header .breadcrumb-overlay {
+  background: #00000099;
+  height: 100%;
+}
+
+.header .fixed-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.header .fixed-images > div {
+  position: absolute;
+}
+
+.header .fixed-images .image-1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -33%);
+  z-index: 1;
+}
+
+.header .fixed-images .image-1 img {
+  width: 450px;
+}
+
+.header .fixed-images .image-2 {
+  top: 72%;
+  left: 57%;
+  z-index: 2;
+}
+
+.header .fixed-images .image-2 img {
+  width: 270px;
+}
+
+.header .fixed-images .image-3 {
+  top: 53%;
+  left: -40px;
+  z-index: 2;
+}
+
+.header .fixed-images .image-3 img {
+  width: 220px;
+}
+
+.header .fixed-images .image-4 {
+  top: 50%;
+  right: -120px;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.header .header-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.header .navigation-menu {
+  padding: 1.5rem 0;
+  transition: 0.5s;
+}
+
+.header .navigation-menu .navigation-menu-content {
+  /* position: relative; */
+}
+
+.header .navigation-menu .navigation-menu-content .nav-togglers {
+  position: relative;
+  display: none;
+}
+
+.header .navigation-menu .navigation-menu-content .nav-togglers > div {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 20px;
+  background: #fff;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header .navigation-menu .navigation-menu-content .nav-togglers > div.nav-open {
+  position: fixed;
+  top: 50px;
+  left: 30px;
+  background: none;
+  color: #fff7;
+  transition: 0.3s;
+}
+
+.header
+  .navigation-menu
+  .navigation-menu-content
+  .nav-togglers
+  > div.nav-open:hover {
+  color: #fff;
+}
+
+.header .navigation-menu .navigation-menu-logo {
+  padding: 0 2rem;
+  background: #fff;
+}
+
+.header .navigation-menu .navigation-menu-logo img {
+  width: 80px;
+}
+
+.header .navigation-menu ul {
+  gap: 2.5rem;
+}
+
+.header .navigation-menu ul li a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.header-caption .caption-text p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.header-caption .featured-food h5.cursive {
+  font-family: "Pacifico";
+  margin-top: -7px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation-menu.fixed {
+  background: var(--primary-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 0.7rem 0;
+}
+
+.navigation-menu.fixed .navigation-menu-logo {
+  padding: 0;
+  background: none;
+}
+
+/* _______________ mobile nav start _____________*/
+
+/* ______________ mobile nav end _________________ */
+
+/* ______________ header section end __________________ */
+
+/* _________________ about section start ______________ */
+
+.about-section .about-text-content,
+.about-section .mission-and-vision {
+  gap: 3rem;
+}
+
+.about-section .about-text-content p,
+.about-section .mission-and-vision .mission,
+.about-section .mission-and-vision .vision {
+  flex-basis: calc(50% - 1.5rem);
+  line-height: 1.5;
+}
+
+/* __________________ about section end ________________ */
+
+/* __________________ menu card section start _____________ */
+
+.line {
+  /* flex-basis: 10%; */
+  height: 3px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* __________________ menu card section end _______________ */
+
+/* __________________ featured food section start ____________ */
+
+.featured-food-section .featured-food-info {
+  padding: 3rem;
+}
+
+.featured-food-section .item-2 {
+  background: #1b1c20;
+}
+
+.featured-food-section .featured-food-item .featured-food-image img {
+  object-fit: cover;
+}
+
+.featured-food-section .featured-food-info-title .line {
+  flex-basis: 40%;
+  height: 3px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.featured-food-section .featured-food-item > div {
+  flex-basis: 50%;
+}
+
+.featured-food-section .featured-food-item > div {
+  flex-basis: 50%;
+}
+
+.featured-food-section .featured-food-item > div img {
+  width: 100%;
+}
+
+/* ________________ featured food section end ____________ */
+
+/* ________________ our menu list section start ____________ */
+
+.our-menu-list-section .our-menu-list-container {
+  gap: 2rem;
+}
+
+.our-menu-list-section .our-menu-list-container .menu-item {
+  flex-basis: calc(33.33% - 1.4rem);
+  padding: 2rem;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  box-shadow: 5px 5px 20px #0004;
+}
+
+.our-menu-list-section .our-menu-list-container .menu-item .food-description p {
+  line-height: 1.5;
+}
+
+.our-menu-list-section .our-menu-list-container .menu-item .food-image img {
+  width: 250px;
+}
+
+.our-menu-list-section .our-menu-list-container .menu-item .menu-button a {
+  padding: 0.9rem 1.7rem;
+  border-radius: 555px;
+  font-size: 0.9rem;
+}
+
+/* ________________ our menu list section end ______________ */
+
+/* _______________ room showcase section start _____________ */
+
+.room-showcase-section .room-showcase-section-content > div {
+  flex-basis: 50%;
+  padding: 2rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.room-showcase-section .room-showcase-section-content .showcase-container {
+  gap: 1.5rem;
+  background: url("../images/rooms/showcasebg.png") no-repeat top;
+  background-size: cover;
+  position: relative;
+}
+
+.room-showcase-section
+  .room-showcase-section-content
+  .showcase-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.room-showcase-section
+  .room-showcase-section-content
+  .showcase-container
+  .showcase-item {
+  position: relative;
+  z-index: 1;
+  flex-basis: calc(50% - 0.75rem);
+}
+
+.room-showcase-section
+  .room-showcase-section-content
+  .showcase-container
+  .showcase-item
+  img {
+  width: 100%;
+}
+
+.room-showcase-section
+  .room-showcase-section-content
+  .showcase-container
+  .showcase-item
+  .showcase-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.room-showcase-section
+  .room-showcase-section-content
+  .showcase-container
+  .showcase-item
+  .showcase-description
+  .showcase-description-content {
+  padding: 0 2rem;
+  border: 2px solid #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.room-showcase-section
+  .room-showcase-section-content
+  .showcase-container
+  .showcase-item:hover
+  .showcase-description {
+  opacity: 1;
+}
+
+/* _______________ room showcase section end _______________ */
+
+/* _______________ subscribe newsletter section start _________ */
+
+.newsletter-section .newsletter-section-content form {
+  gap: 1.5rem;
+}
+
+.newsletter-section
+  .newsletter-section-content
+  form
+  input:not([type="submit"]) {
+  padding: 1rem;
+  width: 270px;
+}
+
+/* _______________ subscribe newsletter section end ____________ */
+
+/* _____________ footer section start ______________________ */
+
+.footer-section {
+  background: #0b0b0b;
+  padding-bottom: 0;
+}
+
+.footer-section .footer-item {
+  flex-basis: calc(25% - 0.5rem);
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.footer-section .footer-item .footer-title {
+  position: relative;
+}
+
+.footer-section .footer-item .footer-title h5 {
+  padding: 0.7rem 0;
+}
+
+.footer-section .footer-item .footer-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.footer-section .footer-section-inner {
+  flex-shrink: 1;
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+.footer-section .footer-item .hotel-logo img {
+  width: 100px;
+}
+
+.footer-section .hotel-intro {
+  flex-basis: 20%;
+}
+
+.footer-section .resources {
+  flex-basis: 15%;
+  margin-left: 2rem;
+}
+
+.footer-section .resources ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section .resources ul li a {
+  color: #fff;
+  margin: 0.3rem 0;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.footer-section .resources ul li a:hover {
+  transform: translateX(5px);
+  color: #a7a7a7;
+}
+
+.footer-section .reservation {
+  flex-basis: 20%;
+}
+
+.footer-section .reservation a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ______________ footer section end ______________________ */
+
+/* ______________ our menu page start ___________________ */
+
+.our-menus-section .menu-container-inner {
+  gap: 3rem;
+}
+
+.our-menus-section .menu-featured-image {
+  flex-basis: 50%;
+}
+
+.our-menus-section .menu-featured-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-menus-section .menu-title h5 {
+  margin-top: 0;
+}
+
+/* ______________ our menu page end __________________ */
+
+/* _______________ contact page start ________________ */
+
+/* _____________ contact detail section start ___________ */
+
+.contact-detail-section .contact-detail-item .contact-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--color-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+}
+
+/* ____________ contact detail section end _____________ */
+
+/* ____________ contact form section start ______________ */
+
+.contact-form-section .contact-form-section-content {
+  gap: 3rem;
+}
+
+.contact-form-section form {
+  gap: 1rem;
+}
+
+.contact-form-section form label {
+  display: block;
+  flex-basis: calc(50% - 0.5rem);
+}
+
+.contact-form-section form label input:not([type="submit"]) {
+  padding: 1rem;
+}
+
+.contact-form-section form label[for="phone"],
+.contact-form-section form label[for="message"],
+.contact-form-section form label[for="submit"] {
+  flex-basis: 100%;
+}
+
+/* ____________ contact form section end _________________ */
+
+/* ________________ contact page end _________________ */

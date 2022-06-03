@@ -28,3 +28,9 @@ closeButton.addEventListener("click", () => {
   navigationMenu.classList.remove("open");
   openButton.style.opacity = "1";
 });
+
+// lightgallery
+lightGallery(document.getElementById("animated-thumbnails"), {
+  thumbnail: true,
+  subHtmlSelectorRelative: true,
+});

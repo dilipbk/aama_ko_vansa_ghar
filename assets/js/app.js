@@ -30,7 +30,12 @@ closeButton.addEventListener("click", () => {
 });
 
 // lightgallery
-lightGallery(document.getElementById("animated-thumbnails"), {
+lightGallery(document.getElementById("gallery-one"), {
+  thumbnail: true,
+  subHtmlSelectorRelative: true,
+});
+
+lightGallery(document.getElementById("gallery-two"), {
   thumbnail: true,
   subHtmlSelectorRelative: true,
 });

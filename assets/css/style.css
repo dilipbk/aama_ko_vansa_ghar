@@ -506,17 +506,61 @@ body {
 }
 
 .our-menus-section .menu-featured-image {
-  flex-basis: 50%;
+  flex-basis: 45%;
+}
+
+.our-menus-section .menu-description {
+  flex-basis: 55%;
 }
 
 .our-menus-section .menu-featured-image img {
   width: 100%;
-  height: 100%;
+  height: 600px;
+  object-fit: cover;
+  -o-object-fit: cover;
 }
 
 .our-menus-section .menu-title h5 {
   margin-top: 0;
 }
+
+.our-menus-section .menu-container .list-item {
+  column-gap: 2rem;
+}
+
+.pagination-section {
+  margin: 0;
+  padding-top: 0;
+}
+
+.pagination-section .pagination-section-content {
+  gap: 0.2rem;
+}
+
+.pagination-section .pagination-section-content a {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  transition: 0.1s;
+}
+
+.pagination-section .pagination-section-content a:hover {
+  background: var(--color-green);
+  color: #fff;
+}
+
+.current-page a {
+  background: var(--color-green) !important;
+  color: #fff !important;
+}
+
+/* .previous-page a,
+.next-page a {
+  background: var(--color-pink) !important;
+  color: #fff !important;
+} */
 
 /* ______________ our menu page end __________________ */
 
@@ -566,3 +610,45 @@ body {
 /* ____________ contact form section end _________________ */
 
 /* ________________ contact page end _________________ */
+
+/* ________________ gallery page start _______________ */
+
+.gallery-section .gallery-container {
+  background: #fff;
+  color: #000;
+  box-shadow: 5px 5px 15px #000, -5px -5px 15px #5b412a;
+  margin: 4rem 0;
+}
+
+.gallery-section .gallery-container .gallery-heading {
+  background: var(--color-pink);
+  padding: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.gallery-section .gallery-container .gallery-heading h3 {
+  font-weight: 500;
+}
+
+.gallery-section .gallery-content {
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.gallery-section .gallery-content a {
+  max-width: calc(270px - 0.5rem);
+  flex-basis: calc(270px - 0.5rem);
+  flex-grow: 1;
+  flex-shrink: 1;
+  box-shadow: 5px 5px 10px #bbb;
+  border-radius: 5px;
+}
+
+.gallery-section .gallery-content a img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* ________________ gallery page end _________________ */

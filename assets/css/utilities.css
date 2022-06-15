@@ -613,6 +613,10 @@
   border-style: double;
 }
 
+.no-outline {
+  outline: none;
+}
+
 /* ______________________ CSS CONTAINERS__________________ */
 .container {
   max-width: 960px;
